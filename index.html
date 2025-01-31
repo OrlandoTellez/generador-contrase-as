@@ -9,6 +9,32 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>Generador de contraseñas</h1>
+    <div class="card">
+        <h2>Generador de Contraseñas</h2>
+        <div class="card-div">
+            <input type="text" value="contraseña segura" readonly>
+            <button class="copy-btn">Copiar</button>
+        </div>
+        <label>
+            Longitud: <span id="lengthValue">12</span>
+        </label>
+        
+        <input type="range" min="8" max="20" value="12">
+        
+        <label>
+            <input type="checkbox" checked> Incluir mayúsculas
+        </label>
+        <label>
+            <input type="checkbox" checked> Incluir números
+        </label>
+        <label>
+            <input type="checkbox" checked> Incluir símbolos
+        </label>
+        <label>Fortaleza de la contraseña:</label>
+        <div class="strength-bar">
+            <div></div>
+        </div>
+        <button class="generate-btn">Generar Contraseña</button>
+    </div>
 </body>
 </html>
