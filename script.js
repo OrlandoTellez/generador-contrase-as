@@ -47,6 +47,9 @@ $btnGenerar.addEventListener("click", () => {
     evaluarFortaleza(newPassword)
     $inpuPassword.value = newPassword
 
+    $btnCopiar.innerHTML = `
+    <img src="./icons/copy.svg" alt="copiar">
+    `
 })
 
 function evaluarFortaleza(password) {
@@ -80,4 +83,7 @@ function actualizarBarra(score) {
 
 $btnCopiar.addEventListener("click", () => {
     navigator.clipboard.writeText($inpuPassword.value)
+    $btnCopiar.innerHTML = `
+    <img src="./icons/check.svg" alt="copiar">
+    `
 })

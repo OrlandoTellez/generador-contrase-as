@@ -6,7 +6,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -41,9 +41,15 @@ input[type="text"],
 input[type="range"] {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 5px;
+}
+
+.input-password{
+  width: 100%;
+  background: #27303d;
+  border: none;
+  color: white;
 }
 
 .btn-copiar {
@@ -53,6 +59,7 @@ input[type="range"] {
   background: none;
   border: none;
   cursor: pointer;
+  color: white;
 }
 
 label {
