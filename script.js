@@ -77,3 +77,7 @@ function actualizarBarra(score) {
         $strengthBar.style.backgroundColor = "green"
     }
 }
+
+$btnCopiar.addEventListener("click", () => {
+    navigator.clipboard.writeText($inpuPassword.value)
+})
