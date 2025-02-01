@@ -46,7 +46,7 @@ input[type="range"] {
   margin-top: 5px;
 }
 
-.copy-btn {
+.btn-copiar {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -74,7 +74,7 @@ label {
   width: 75%;
 }
 
-.generate-btn {
+.btn-generar {
   display: block;
   width: 100%;
   background: #007bff;
@@ -86,6 +86,6 @@ label {
   margin-top: 10px;
 }
 
-.generate-btn:hover {
+.btn-generar:hover {
   background: #0056b3;
 }
